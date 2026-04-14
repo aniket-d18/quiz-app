@@ -1,0 +1,60 @@
+1|Java Basics|Who invented Java?|James Gosling|Dennis Ritchie|Bjarne Stroustrup|Guido van Rossum|A
+2|Java Basics|Java was developed by which company?|Microsoft|Sun Microsystems|Google|IBM|B
+3|Java Basics|Which keyword is used to define a class in Java?|function|class|define|struct|B
+4|Java Basics|Which method is the entry point of Java program?|start()|run()|main()|init()|C
+5|Java Basics|Which symbol is used to end a statement in Java?|.|;|:|,|B
+6|Data Types|Which data type is used to store whole numbers?|float|char|int|double|C
+7|Data Types|Which data type is used for decimal numbers?|int|boolean|float|char|C
+8|Data Types|Which keyword is used for constant variables?|final|const|static|immutable|A
+9|Data Types|What is size of int in Java?|2 bytes|4 bytes|8 bytes|Depends on OS|B
+10|Data Types|Which type is used for true or false?|int|boolean|char|bit|B
+11|OOP|Which concept allows data hiding?|Inheritance|Encapsulation|Polymorphism|Abstraction|B
+12|OOP|Which concept allows method overloading?|Inheritance|Encapsulation|Polymorphism|Abstraction|C
+13|OOP|Which keyword is used to inherit a class?|implements|inherits|extends|super|C
+14|OOP|Which keyword is used to refer parent class?|this|parent|super|base|C
+15|OOP|Which concept shows only essential features?|Encapsulation|Inheritance|Abstraction|Polymorphism|C
+16|Classes|What is an object?|Blueprint|Instance of class|Method|Variable|B
+17|Classes|Which keyword is used to create object?|new|create|alloc|make|A
+18|Classes|Constructor name must match?|Method name|Class name|Variable name|Package name|B
+19|Classes|Constructor has return type?|Yes|No|Only int|Only void|B
+20|Classes|Default constructor is provided by?|Compiler|Programmer|JVM|OS|A
+21|Strings|String class belongs to which package?|java.util|java.lang|java.io|java.string|B
+22|Strings|Strings in Java are?|Mutable|Immutable|Flexible|Dynamic|B
+23|Strings|Which method gives length of string?|size()|length()|count()|getSize()|B
+24|Strings|Which method compares strings?|equals()|compare()|match()|check()|A
+25|Strings|Which method converts to uppercase?|toUpperCase()|upper()|convertUpper()|makeUpper()|A
+26|Arrays|Array index starts from?|0|1|-1|Depends|A
+27|Arrays|Which is correct array declaration?|int a[]|array int a|int a|arr int[]|A
+28|Arrays|Which property gives array length?|size|length|count|len()|B
+29|Arrays|Arrays are?|Static|Dynamic|Flexible|Resizable|A
+30|Arrays|Which loop is best for array?|for|if|switch|break|A
+31|Control Statements|Which is decision making statement?|for|if|while|do|B
+32|Control Statements|Which loop executes at least once?|for|while|do while|if|C
+33|Control Statements|Which keyword exits loop?|break|exit|stop|end|A
+34|Control Statements|Which keyword skips iteration?|continue|skip|pass|ignore|A
+35|Control Statements|Switch works with?|int only|char only|Both int and char|float only|C
+36|Exception Handling|Superclass of all exceptions?|Error|Throwable|Exception|RuntimeException|B
+37|Exception Handling|Which keyword handles exception?|try|catch|throw|All|D
+38|Exception Handling|Which block always executes?|try|catch|finally|throw|C
+39|Exception Handling|Which keyword throws exception?|throw|throws|error|exception|A
+40|Exception Handling|Checked exceptions are checked by?|Compiler|JVM|OS|Programmer|A
+41|Multithreading|Thread class belongs to?|java.lang|java.util|java.thread|java.multi|A
+42|Multithreading|Which method starts thread?|run()|start()|init()|execute()|B
+43|Multithreading|Which interface is used for thread?|Runnable|Serializable|Cloneable|Comparable|A
+44|Multithreading|Thread life cycle includes?|New|Runnable|Running|All|D
+45|Multithreading|Which method stops thread?|stop()|end()|terminate()|kill()|A
+46|Collections|Which is ordered collection?|Set|List|Map|Queue|B
+47|Collections|Which allows duplicate elements?|Set|List|Map|None|B
+48|Collections|Which does not allow duplicates?|List|Set|ArrayList|Vector|B
+49|Collections|HashMap stores?|Key-value pairs|Only keys|Only values|None|A
+50|Collections|Which is synchronized?|ArrayList|Vector|HashSet|TreeSet|B
+51|File Handling|Which package handles files?|java.io|java.util|java.file|java.stream|A
+52|File Handling|Which class reads file?|FileReader|Scanner|BufferedReader|All|D
+53|File Handling|Which class writes file?|FileWriter|PrintWriter|BufferedWriter|All|D
+54|File Handling|EOF means?|End of file|Error of file|End of format|Error of format|A
+55|File Handling|Which method closes file?|close()|end()|stop()|finish()|A
+56|JDBC|JDBC stands for?|Java Database Connectivity|Java Data Connection|Java DB Control|Java Database Control|A
+57|JDBC|Which package is used for JDBC?|java.sql|java.db|java.jdbc|java.connect|A
+58|JDBC|Which method connects DB?|connect()|getConnection()|open()|start()|B
+59|JDBC|Which object executes query?|Statement|Connection|Driver|ResultSet|A
+60|JDBC|ResultSet is used for?|Store result|Connect DB|Execute query|Close DB|A

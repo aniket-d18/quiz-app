@@ -1,7 +1,10 @@
 package com.quiz;
 
+import com.quiz.gui.MainFrame;
+import javax.swing.SwingUtilities;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Quiz App Started.");
+        SwingUtilities.invokeLater(MainFrame::new);
     }
 }

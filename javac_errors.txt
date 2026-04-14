@@ -1,0 +1,58 @@
+javac : C:\Users\anike\One
+Drive\Desktop\SY Mini Proj
+ects\quiz-app\src\main\jav
+a\com\quiz\gui\LoginPanel.
+java:42: error: 
+unmappable character 
+(0x9D) for encoding 
+windows-1252
+At line:1 char:1
++ javac -cp 
+"src/main/java" 
+--source-path 
+"src/main/java" -d 
+target/cla ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (C  
+  :\Users\anike\...ng w   
+ indows-1252:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+        JLabel logo = new 
+JLabel("????", 
+SwingConstants.CENTER);
+                          
+           ^
+C:\Users\anike\OneDrive\De
+sktop\SY Mini Projects\qui
+z-app\src\main\java\com\qu
+iz\gui\QuizPanel.java:217:
+ error: unmappable 
+character (0x90) for 
+encoding windows-1252
+        prevBtn = 
+navButton("??? Previous", 
+false);
+                          
+     ^
+C:\Users\anike\OneDrive\De
+sktop\SY Mini Projects\qui
+z-app\src\main\java\com\qu
+iz\gui\ResultPanel.java:26
+8: error: unmappable 
+character (0x9D) for 
+encoding windows-1252
+        String statusIcon 
+= (chosen == null) ? 
+"???" : correct ? "???" : 
+"???";
+                          
+                          
+                       ^
+3 errors
