@@ -33,6 +33,7 @@ public class QuizEngine {
     private List<String>   selectedAnswers;
     private int            currentIndex;
     private boolean        sessionActive;
+    private boolean        isPracticeMode;
 
     // ── Session control ────────────────────────────────────────────────────────
 
@@ -40,8 +41,9 @@ public class QuizEngine {
      * Loads questions and initialises a new session.
      * Must be called before any other method.
      */
-    public void startSession(Student student) throws IOException {
+    public void startSession(Student student, boolean isPracticeMode) throws IOException {
         this.student         = student;
+        this.isPracticeMode  = isPracticeMode;
         this.questions       = new ArrayList<>(loader.loadQuestions());
         this.selectedAnswers = new ArrayList<>();
         this.currentIndex    = 0;
@@ -113,7 +115,9 @@ public class QuizEngine {
         sessionActive = false;
 
         Result result = scorer.calculate(student, questions, selectedAnswers);
-        manager.save(result);
+        if (!isPracticeMode) {
+            manager.save(result);
+        }
         lastFeedback = feedback.generate(result);
         return result;
     }

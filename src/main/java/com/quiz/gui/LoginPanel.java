@@ -20,6 +20,7 @@ public class LoginPanel extends JPanel {
     private JTextField rollField;
     private JLabel     errorLabel;
     private JButton    startBtn;
+    private JRadioButton practiceModeBtn;
 
     public LoginPanel(MainFrame frame) {
         this.frame = frame;
@@ -86,6 +87,25 @@ public class LoginPanel extends JPanel {
         errorLabel.setForeground(MainFrame.DANGER);
         errorLabel.setAlignmentX(CENTER_ALIGNMENT);
 
+        // ── Mode Selection ──
+        JPanel modeBox = new JPanel(new FlowLayout(FlowLayout.CENTER, 30, 0));
+        modeBox.setOpaque(false);
+        modeBox.setAlignmentX(CENTER_ALIGNMENT);
+        modeBox.setMaximumSize(new Dimension(Integer.MAX_VALUE, 30));
+
+        JRadioButton examBtn = new JRadioButton("Exam Mode", true);
+        practiceModeBtn = new JRadioButton("Practice Mode", false);
+
+        ButtonGroup modeGroup = new ButtonGroup();
+        modeGroup.add(examBtn); modeGroup.add(practiceModeBtn);
+
+        Font modeFont = new Font("Segoe UI", Font.BOLD, 14);
+        examBtn.setFont(modeFont); examBtn.setForeground(MainFrame.TEXT_PRIMARY); examBtn.setOpaque(false); examBtn.setFocusPainted(false);
+        practiceModeBtn.setFont(modeFont); practiceModeBtn.setForeground(MainFrame.TEXT_PRIMARY); practiceModeBtn.setOpaque(false); practiceModeBtn.setFocusPainted(false);
+
+        modeBox.add(examBtn);
+        modeBox.add(practiceModeBtn);
+
         // ── Info chips ──
         JPanel chips = new JPanel(new FlowLayout(FlowLayout.CENTER, 10, 0));
         chips.setOpaque(false);
@@ -119,7 +139,9 @@ public class LoginPanel extends JPanel {
         card.add(formContainer);
         card.add(Box.createVerticalStrut(8));
         card.add(errorLabel);
-        card.add(Box.createVerticalStrut(8));
+        card.add(Box.createVerticalStrut(10));
+        card.add(modeBox);
+        card.add(Box.createVerticalStrut(15));
         card.add(chips);
         card.add(Box.createVerticalStrut(25));
         card.add(startBtn);
@@ -222,7 +244,7 @@ public class LoginPanel extends JPanel {
         new SwingWorker<Void, Void>() {
             private String err;
             protected Void doInBackground() {
-                try { engine.startSession(new Student(name, roll)); }
+                try { engine.startSession(new Student(name, roll), practiceModeBtn.isSelected()); }
                 catch (Exception ex) { err = ex.getMessage(); }
                 return null;
             }
